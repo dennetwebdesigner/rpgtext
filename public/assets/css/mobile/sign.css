@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Monofett&family=Roboto&display=swap');
+.headerContainer {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    background-color: black;
+}
+
+.headerContainer .titleContainer {
+    padding: 15px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.headerContainer .titleContainer h1 {
+    opacity: 0;
+    transition: 2s;
+    margin-right: 10%;
+    text-align: center;
+    font-family: 'Monofett', cursive;
+    font-size: 4em;
+}
+
+.headerContainer .logoContainer {
+    width: 80%;
+    height: 10%;
+    margin: 0 auto 0px;
+}
+
+.headerContainer .logoContainer img {
+    opacity: 0;
+    transition: 2s;
+    margin-top: -20%;
+}
+
+.headerContainer .formContainer {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.headerContainer .formContainer .formGroupIn {
+    width: 100%;
+    border: none;
+}
+
+.headerContainer .formContainer .formGroupIn .item {
+    width: 100%;
+    padding: 0 10px;
+    margin: 5px 0;
+}
+
+.headerContainer .formContainer .formGroupIn .input {
+    width: 100%;
+    height: 60px;
+    padding: 0 10px;
+    margin: 5px 0;
+}
+
+.headerContainer .formContainer .formGroupIn .input .inputItem {
+    transition: 2s;
+    opacity: 0;
+    width: 80%;
+    height: 100%;
+    padding: 6px 3px 6px 10px;
+    background-color: black;
+    border: 2px solid rgb(151, 10, 10);
+    color: red;
+    font-size: 1.2em;
+}
+
+.headerContainer .formContainer .formGroupIn:last-child {
+    display: flex;
+    transition: 2s;
+    opacity: 0;
+}
+
+.headerContainer .formContainer .formGroupIn .item .linkItem {
+    color: red;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.headerContainer .formContainer .formGroupIn .item .btnItem {
+    text-align: right;
+    float: right;
+    background: none;
+    border: none;
+    padding: 5px 10px;
+    font-weight: bolder;
+    font-size: 1.2em;
+    margin-right: 20%;
+    transition: 2s;
+}
+
+.headerContainer .headerFooter {
+    width: 100%;
+    margin-top: 40px;
+    padding-top: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: 2s;
+}
+
+.containerAbove {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.containerAbove .above {
+    width: 100%;
+}
+
+.containerAbove .above .aboveTitle {
+    margin: 15px auto;
+    padding-left: 15px;
+    color: black;
+}
+
+.containerAbove .above .aboveText {
+    margin: 0px auto 15px;
+    padding: 0px 10%;
+    color: black;
+    text-align: justify;
+}
+
+.containerAbove .containerRpgImg {
+    width: 100%;
+    object-fit: cover;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.footer .containerTitle {
+    width: 100%;
+    font-family: 'Monofett', cursive;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.footer .menu {
+    width: 100%;
+    margin: 20px auto 50px;
+}
+
+.footer .menu .item {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 13px;
+    background-color: rgb(177, 14, 14);
+    padding: 7px;
+    border-radius: 15px;
+}
+
+.footer .menu a {
+    color: white;
+    font-size: 1.4em;
+    text-decoration: none;
+}

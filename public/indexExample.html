@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.js" integrity="sha512-AcZyhRP/tbAEsXCCGlziPun5iFvcSUpEz2jKkx0blkYKbxU81F+iq8FURwPn1sYFeksJ+sDDrI5XujsqSobWdQ==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets//css//style.css">
+</head>
+
+<body>
+    <form id="form">
+        <div class="nameBox">
+            <input type="text" name='name' placeholder='digite seu nome aqui'>
+        </div>
+        <div id='chatBox'></div>
+        <div class="messageInBox">
+            <input type="text" name="message" id="message" placeholder='digite a mensagem aqui' autocomplete="off">
+            <input type="submit" value="enviar">
+        </div>
+    </form>
+
+    <script src="./assets/js/socketConfig.js" type="module"></script>
+    <script src="./assets/js/chat.js" type="module"></script>
+
+
+
+</body>
+
+</html>

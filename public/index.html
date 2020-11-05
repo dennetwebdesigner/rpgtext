@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/mobile/styleMobile.css">
+    <link rel="stylesheet" href="./assets/css/mobile/sign.css">
+    <link rel="stylesheet" href="./assets/css/sign.css">
+</head>
+
+<body>
+    <header class="headerContainer">
+        <h1 id='loading' style='width:100%;margin: auto; position:absolute; margin: 20vh auto;transition: 1s;text-align: center;'>Carregando...</h1>
+        <section class="titleContainer" id="titleContainer">
+            <h1>GAMEBOX</h1>
+        </section>
+        <section class="logoContainer">
+            <img alt="" id='logo'>
+        </section>
+        <section class="formContainer">
+            <form id='formSign'>
+                <fieldset class="formGroupIn">
+                    <article class="input">
+                        <input type="text" class="inputItem" placeholder="Nome de usuário" autocomplete="off" name="username">
+                    </article>
+                </fieldset>
+                <fieldset class="formGroupIn">
+                    <article class="input">
+                        <input type="password" class="inputItem" placeholder="Senha" name="password">
+                    </article>
+                </fieldset>
+                <fieldset class="formGroupIn" id='btnActions'>
+                    <article class="item">
+                        <a href="/registrar" class="linkItem">Registrar-se</a>
+                    </article>
+                    <article class="item">
+                        <button type="submit" id="btnAction" class="btnItem">Entrar</button>
+                    </article>
+                </fieldset>
+            </form>
+        </section>
+        <section id="more" class="headerFooter">
+            <h3>Saiba Mais</h3>
+        </section>
+    </header>
+
+    <main class="containerAbove">
+        <section class="above">
+            <h1 class="aboveTitle">Sobre</h1>
+            <p class="aboveText">
+                -x-x-x-x-x- é um jogo de rpg da velha guarda, feito pra divertir e trazer nostalgia. Com uma visão retro e até inexperiente, -x-x-x-x-x-x a equipe por detraz do desenvolvimento deste jogo quer alcançar a satisfação de compartilhar um sonho realizado com
+                cada pessoa que venha jogar junto conosco.
+            </p>
+        </section>
+        <section class="containerRpgImg">
+            <img id='imgAbove'>
+        </section>
+    </main>
+
+    <footer class='footer'>
+        <section class="containerTitle">
+            <h1>RPG de Texto</h1>
+        </section>
+        <nav class="menu">
+            <section class="item">
+                <a href="">Jogar Agora</a>
+            </section>
+            <section class="item">
+                <a href="">Registre-se</a>
+            </section>
+        </nav>
+    </footer>
+
+    <script src="./assets/js/animationIndex.js" type="module"></script>
+
+</body>
+
+</html>

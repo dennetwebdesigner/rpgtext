@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Monofett&family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html,
+body {
+    max-width: 100vw;
+    width: 100vw;
+    max-height: 100vh;
+    height: 100vh;
+    overflow: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 100%;
+    margin: auto;
+}
+
+form {
+    width: 100%;
+    margin: auto;
+}
