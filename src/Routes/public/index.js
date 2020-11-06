@@ -10,10 +10,13 @@ app.set('views engine', 'html')
 
 app.use('/static', express.static(resolve(__dirname, '..', '..', 'uploads')))
 
+const pathFiles = [
+    { path: '/registrar', file: 'register' },
+    { path: '/personagens', file: 'characters' }
+]
 
-
-app.use('/registrar', (req, res) => {
-    res.render('register.html')
+pathFiles.map(({ path, file }) => {
+    app.use(path, (req, res) => res.render(`${file}.html`))
 })
 
 app.use(function(req, res, next) {

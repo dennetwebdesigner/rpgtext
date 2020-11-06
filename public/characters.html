@@ -6,9 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/mobile/styleMobile.css">
-    <link rel="stylesheet" href="./assets/css/mobile/sign.css">
-    <link rel="stylesheet" href="./assets/css/sign.css">
+    <link rel="stylesheet" href="./assets/css/mobile/charactersMobile.css">
+    <!-- <link rel="stylesheet" href="./assets/css/sign.css">  -->
 </head>
+
+<main class="containerCharacters">
+    <section class="title">
+        <h1>Seleção de personagens</h1>
+    </section>
+    <ul class="charactersList">
+        <li class="character">
+            <div class="squad" id="new">
+                <div class="circle"></div>
+            </div>
+            <div class="new">novo</div>
+        </li>
+        <li class="character">
+            <h3>Maxros</h3>
+        </li>
+    </ul>
+</main>
+
+<section class="modal" id='modal'>
+    <div class="close" id='close'>fechar</div>
+    <form class="createCharacter" id="createCharacter">
+        <fieldset class="group">
+            <article class="item">
+                <label for="" class="labelItem">Nome do personagem:</label>
+            </article>
+            <article class="item">
+                <input type="text" name='characterName' class="inputItem">
+            </article>
+        </fieldset>
+    </form>
+</section>
+
+<script src="./assets/js/characters.js" type='module'></script>
 
 <body>
 </body>
