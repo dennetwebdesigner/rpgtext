@@ -21,8 +21,8 @@ class App {
 
     }
     routes() {
+        this.app.use(express.json())
         this.app.use('/api', routes)
-
     }
     views() {
         this.app.use('/', RouteViews)

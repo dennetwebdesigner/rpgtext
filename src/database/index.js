@@ -1,7 +1,12 @@
 import Sequelize from 'sequelize'
 import dbConfig from '../config/database'
 
-const models = []
+import groupModels from '../app/models'
+
+const models = [
+    groupModels.User.default,
+    groupModels.Character.default,
+]
 
 class Database {
     constructor() {
@@ -15,8 +20,7 @@ class Database {
             models.map(model => model.init(this.connection))
 
             models.forEach(model => {
-                if (model.associate)
-                    model.associate(this.connection.models)
+                if (model.associate) model.associate(this.connection.models)
             })
         }
     }

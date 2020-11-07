@@ -1,4 +1,4 @@
-import { imgsServer } from './consts.js'
+import { imgsServer } from './helpers.js'
 
 const titleEl = document.querySelector('#titleContainer h1');
 const imgLogoEl = document.querySelector('#logo');
