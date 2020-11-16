@@ -9,7 +9,11 @@ class UserController {
     }
 
     async show(req, res) {
-        const id = req.userId
+        const { id } = req.params
+        const authHeader = req.headers.authorization
+
+        if (!(await sessionValidate(authHeader, id)))
+            return res.json({ error: 'token not is valed' })
 
         try {
             const user = await User.findOne({

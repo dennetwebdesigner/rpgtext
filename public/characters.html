@@ -13,19 +13,9 @@
 
 <main class="containerCharacters">
     <section class="title">
-        <h1>Seleção de personagens</h1>
+        <h1>Seleção de personagens <span id='new'> - novo</span></h1>
     </section>
-    <ul class="charactersList">
-        <li class="character">
-            <div class="squad" id="new">
-                <div class="circle"></div>
-            </div>
-            <div class="new">novo</div>
-        </li>
-        <li class="character">
-            <h3>Maxros</h3>
-        </li>
-    </ul>
+    <ul class="charactersList" id='listCharacter'></ul>
 </main>
 
 <section class="modal" id='modal'>
@@ -33,17 +23,22 @@
     <form class="createCharacter" id="createCharacter">
         <fieldset class="group">
             <article class="item">
-                <label for="" class="labelItem">Nome do personagem:</label>
+                <label for="" class="labelItem">
+                    Nome do personagem: 
+                    <div id='message' style='color:black'></div>
+                </label>
             </article>
             <article class="item">
-                <input type="text" name='characterName' class="inputItem">
+                <input type="text" name='name' class="inputItem">
+            </article>
+            <article class="item">
+                <input type="submit" value='criar' class="inputItem">
             </article>
         </fieldset>
     </form>
 </section>
 
-<script src="./assets/js/characters.js" type='module'></script>
-<script src="./assets/js/characters/characters.js" type='module'></script>
+<script src="./assets/js/characters/index.js" type='module'></script>
 
 <body>
 </body>

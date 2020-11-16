@@ -1,8 +1,8 @@
-import { api } from '../helpers.js'
+import { qs, api } from '../helpers.js'
 import { login } from './login.js'
 
-const form = document.querySelector('#formSign')
-const message = document.querySelector('#errorMessage')
+const form = qs('#formSign')
+const message = qs('#errorMessage')
 
 
 const handleSubmitForm = async(e) => {

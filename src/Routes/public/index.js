@@ -12,7 +12,8 @@ app.use('/static', express.static(resolve(__dirname, '..', '..', 'uploads')))
 
 const pathFiles = [
     { path: '/registrar', file: 'register' },
-    { path: '/personagens', file: 'characters' }
+    { path: '/personagens', file: 'characters' },
+    { path: '/jogo', file: 'game' }
 ]
 
 pathFiles.map(({ path, file }) => {

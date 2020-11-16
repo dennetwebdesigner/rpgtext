@@ -1,7 +1,7 @@
-import { baseUrl, api, errorApi } from '../helpers.js'
+import { qs, baseUrl, api, errorApi } from '../helpers.js'
 
-const form = document.querySelector('#formSign')
-const message = document.querySelector('#errorMessage')
+const form = qs('#formSign')
+const message = qs('#errorMessage')
 
 
 export const login = async(username, password, message) => {

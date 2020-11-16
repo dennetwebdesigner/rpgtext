@@ -2,6 +2,12 @@ export const baseUrl = 'http://localhost:3000'
 
 export const imgsServer = `${baseUrl}/static`
 
+
+export const qs = (e) => {
+    return document.querySelector(e)
+}
+
+
 export const errorApi = (error, type, message, element) => {
     if (error === type) {
         element.textContent = message
