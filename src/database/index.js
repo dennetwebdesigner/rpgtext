@@ -6,6 +6,7 @@ import groupModels from '../app/models'
 const models = [
     groupModels.User.default,
     groupModels.Character.default,
+    groupModels.Enemy.default,
 ]
 
 class Database {
