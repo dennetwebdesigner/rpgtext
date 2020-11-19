@@ -2,48 +2,69 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/mobile/styleMobile.css">
+    <link rel='stylesheet' href='./assets/css/mobile/styleMobile.css'>
+    <link rel='stylesheet' href='./assets/css/game.css'>
 </head>
 
-<header class="header">
-    <section class="titleGame">
-        <h1>RPG TEXT</h1>
-    </section>
-    <nav class='menu'>
-        <ul class='list'>
-            <li class="item">
-                <a href="" class="link">Inicio</a>
-            </li>
-        </ul>
-    </nav>
-</header>
-
-
-<main class="container">
-    <section class="topLeft">
-        <article class="tagChar">
-            <h3>Name</h3>
-            <h3>LVL 1</h3>
-        </article>
-        <section class="myChar">
-            <img id="myChar">
+<main class='gameContainer'>
+    <section class='topLeft'>
+        <section class='nameFlags'>
+            <h1>Maxros - <span>nivel: 1</span></h1>
+        </section>
+        <section class='groupBars'>
+            <div class='bar'>
+                <p>20/60</p>
+                <div class='lifeBar'></div>
+            </div>
+            <div class='bar'>
+                <p>20/60</p>
+                <div class='xpBar'></div>
+            </div>
+            <div class='bar'>
+                <p>20/60</p>
+                <div class='timeBar'></div>
+            </div>
         </section>
     </section>
-    <section class="bottomLeft"></section>
-    <section class="topRight">
-        <ul class='enemyList'>
-            <li class="enemy">
-                <h3>Cachorro loco - <span>3</span></h3>
-            </li>
+    <section class='topRight' id='enimy'>
+        <section class='nameFlags'>
+            <h1>Enemy - <span>nivel: 1</span></h1>
+        </section>
+        <section class='groupBars'>
+            <div class='bar'>
+                <p>20/60</p>
+                <div class='lifeBar'></div>
+            </div>
+            <div class='bar'>
+                <p>20/60</p>
+                <div class='timeBar'></div>
+            </div>
+        </section>
+    </section>
+    <section class='bottomLeft'>
+        <h3>Logs de batalha</h3>
+        <ul class='logsBattle'>
+            <li>Texto e exemplo</li>
+            <li class='logBattleEnemy'>Texto e exemplo</li>
+            <li>Texto e exemplo 2</li>
+            <li class='logBattleEnemy'>Texto e exemplo</li>
+
         </ul>
     </section>
-    <section class="bottomRight"></section>
+    <section class='bottomRight'>
+        <ul class='enemiesList'>
+            <li>Enemy name</li>
+            <li>Enemy name</li>
+            <li>Enemy name</li>
+            <li>Enemy name</li>
+        </ul>
+    </section>
 </main>
 
-<!-- <script src="./assets/js/characters/index.js" type='module'></script> -->
+<!-- <script src='./assets/js/characters/index.js' type='module'></script> -->
 
 <body>
 </body>

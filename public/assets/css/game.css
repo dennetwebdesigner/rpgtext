@@ -1,0 +1,122 @@
+body {
+    background-color: #3d3d3d;
+}
+
+.gameContainer {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 35vh 65vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "tl tl tr tr" "bl bl bl br";
+}
+
+.gameContainer .topLeft {
+    border-bottom: 1px solid white;
+    grid-area: tl;
+}
+
+.gameContainer .topRight {
+    border-bottom: 1px solid white;
+    grid-area: tr;
+}
+
+.gameContainer .bottomLeft {
+    grid-area: bl;
+    display: flex;
+    position: relative;
+}
+
+.gameContainer .bottomRight {
+    grid-area: br;
+}
+
+.nameFlags {
+    width: 90%;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.groupBars {
+    width: 90%;
+    margin: auto;
+}
+
+.groupBars .bar {
+    width: 100%;
+    height: 50px;
+    border: white;
+    position: relative;
+    border: 2px solid white;
+    margin-bottom: 5px;
+}
+
+.groupBars:nth-child(2) .nameFlags h1 {
+    text-align: right;
+}
+
+.groupBars .bar div {
+    width: 100%;
+    height: 100%;
+}
+
+.groupBars .bar p {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 15px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.groupBars .bar .lifeBar {
+    background-color: red;
+}
+
+.groupBars .bar .xpBar {
+    background-color: blueviolet;
+}
+
+.groupBars .bar .timeBar {
+    background-color: yellowgreen;
+}
+
+.bottomLeft .logsBattle {
+    display: block;
+    width: 90%;
+    max-height: 60vh;
+    list-style: none;
+    border-top: 1px solid white;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow-y: auto;
+}
+
+.bottomLeft h3 {
+    margin: 10px 30px;
+}
+
+.bottomLeft .logsBattle li {
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+
+.logBattleEnemy {
+    text-align: right;
+}
+
+.bottomRight .enemiesList {
+    list-style: none;
+    width: 100%;
+    padding: 10px 0 0;
+}
+
+.bottomRight .enemiesList li {
+    width: 100%;
+    height: 30px;
+}
